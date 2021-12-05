@@ -9,9 +9,9 @@ var spamTotal=document.getElementById("somar")
 var input=document.getElementById('numero')
 var cor 
 
-function adicionarIten(){
+function adicionarItem(){
     if(input.value.length!==0){
-        cont++
+        cont = cont + 1
         lista.push(parseFloat(input.value))
         contador.innerHTML = cont
         input.value=''
@@ -19,12 +19,12 @@ function adicionarIten(){
     }
 }
 
-function somarTotal(){
-    var controleDoLaço=0
+function total(){
+    var repetir=0
     if(cont!==0){
-        while(controleDoLaço<lista.length){
+        while(repetir<lista.length){
          soma+=lista[controleDoLaço]
-         controleDoLaço++
+         repetir = repetir + 1
         }
         spamTotal.innerHTML= soma.toFixed(2)
 
